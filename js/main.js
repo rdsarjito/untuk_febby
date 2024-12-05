@@ -20,3 +20,24 @@ onload = () => {
     clearTimeout(c);
   }, 1000);
 };
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const audio = document.getElementById('linkmp3');
+//   document.body.addEventListener('click', function () {
+//       audio.play();
+//   }, { once: true }); // Memastikan hanya sekali interaksi dibutuhkan
+// });
+
+document.getElementById('playButton').addEventListener('click', function() {
+  // Sembunyikan tombol setelah diklik
+  this.style.display = 'none';
+
+  // Mainkan audio
+  const audio = document.getElementById('linkmp3');
+  audio.play();
+
+  // Menampilkan elemen bunga setelah audio mulai diputar
+  setTimeout(function() {
+    document.querySelector('.flowers').style.display = 'block';
+  }, 1000); // Menunggu 1 detik setelah audio mulai diputar
+});

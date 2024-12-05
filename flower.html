@@ -8,13 +8,37 @@
   <link rel="shortcut icon" href="images/gift.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
 
+  <style>
+    .flowers {
+      display: none;
+    }
+
+    #playButton {
+      background-color: #4CAF50; /* Warna latar belakang */
+      color: white; /* Warna teks */
+      padding: 15px 32px; /* Ukuran tombol */
+      text-align: center; /* Menyusun teks di tengah */
+      text-decoration: none; /* Menghilangkan underline */
+      display: inline-block; /* Agar tombol inline */
+      font-size: 16px; /* Ukuran font */
+      margin: 4px 2px; /* Margin */
+      cursor: pointer; /* Cursor pointer saat hover */
+      border-radius: 8px; /* Sudut melengkung */
+      border: none; /* Menghilangkan border */
+      transition: background-color 0.3s; /* Efek transisi */
+    }
+    
+    #playButton:hover {
+      background-color: #45a049; /* Warna tombol saat hover */
+    }
+  </style>
   <!-- Document Title -->
-  <title>FLOWERS</title>
+  <title>Untuk Febby</title>
 </head>
 
 <body class="not-loaded">
-  <!-- Background -->
-  <div class="night"></div>
+  <button id="playButton">Pencet Ini</button>
+  <audio src="./hadapi.mp3" id="linkmp3" class="sembunyi"></audio>
 
   <!-- Flower -->
   <div class="flowers">
@@ -321,4 +345,5 @@
 </html>
 
 <!-- Import Javascript -->
-<script src="js/main.js"></script>
+<script src="js/main.js">
+</script>
